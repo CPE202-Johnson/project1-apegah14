@@ -1,3 +1,11 @@
-
 def convert(num, b):
-    """Recursive function that returns a string representing num in the base b"""
+    if num // b == 0:
+        converted_num = []
+    else:
+        remainder = num % b
+        quotient = num // b
+        converted_num = convert(quotient, b) + [remainder]
+    return converted_num
+
+if __name__ == "__main__":
+    print(convert(13, 2))
