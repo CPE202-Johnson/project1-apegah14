@@ -19,5 +19,3 @@ def bears(n):
         for num in nums:
             if bears(num) is True:
                 return bears(num)
-            else:
-                pass
