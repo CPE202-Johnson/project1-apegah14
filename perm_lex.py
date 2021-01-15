@@ -1,3 +1,5 @@
+# string list -> string list
+# generates a list of all the permutations of a given string
 def perm_gen_lex(a):
     final_perm_list = []
     if len(a) == 0:
