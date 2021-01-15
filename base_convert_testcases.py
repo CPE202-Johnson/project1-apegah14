@@ -14,6 +14,7 @@ class TestBaseConvert(unittest.TestCase):
         self.assertEqual(convert(316,16),"13C")
         self.assertEqual(convert(0, 16), "0")
         self.assertEqual(convert(150, 16), "96")
+        self.assertEqual(convert(13, 16), "D")
 
     def test_base10(self):
         self.assertEqual(convert(316, 10), "316")
