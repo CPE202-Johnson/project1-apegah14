@@ -18,4 +18,4 @@ def bears(n):
             nums[2] = n - 42
         for num in nums:
             if bears(num) is True:
-                return bears(num)
+                return True
