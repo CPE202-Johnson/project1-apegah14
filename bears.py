@@ -3,7 +3,7 @@
 def bears(n):
     if n == 42:
         return True
-    elif n == 0:
+    elif n < 42:
         return False
     else:
         nums = [0, 0, 0]
@@ -13,7 +13,10 @@ def bears(n):
             last_two = n % 100  # get last 2 digits of n
             ones = last_two % 10
             tens = last_two // 10
-            nums[1] = n - (ones * tens)
+            if ones == 0 or tens == 0:
+                nums[1] = 0
+            else:
+                nums[1] = n - (ones * tens)
         if n % 5 == 0:  # n is divisible by 5
             nums[2] = n - 42
         for num in nums:
