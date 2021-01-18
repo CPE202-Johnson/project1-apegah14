@@ -2,4 +2,6 @@
 
 Name: Aria Pegah
 
-Progress: Passed base_convert, failed bears, perm_lex unknown
+Worked with Alexander Reynolds
+
+Progress: Passed all user and teacher created test cases
